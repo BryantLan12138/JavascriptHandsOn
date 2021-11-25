@@ -16,14 +16,21 @@ button.addEventListener('click', () => {
     ul.prepend(li);
 })
 
-items.forEach(item => {
-    item.addEventListener('click', Event => {
-        // console.log(Event);
+// items.forEach(item => {
+//     item.addEventListener('click', Event => {
+//         // console.log(Event);
 
-        // change the css
-        // Event.target.style.textDecoration = 'line-through';
+//         // change the css
+//         // Event.target.style.textDecoration = 'line-through';
 
-        // remove the element
-        Event.target.remove()
-    })
+//         // remove the element
+//         Event.target.remove()
+//     })
+// });
+
+// use ul instead
+ul.addEventListener('click', Event => {
+    if(Event.target.tagName === 'LI'){
+        Event.target.remove();
+    }
 });
