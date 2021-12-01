@@ -8,14 +8,93 @@
 </head>
 <body>
     <!-- p stands for padding m standing for margin y standing for y-axis -->
+
     <!-- Top section -->
     <div class="intro py-3 bg-white text-center">
         <div class="container">
             <h2 class="text-primary display-3 my-4">Quiz App</h2>
         </div>
     </div>
-    <script src="app.js"></script>
-    
+
+    <!-- Result Section -->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p>You are <span class="text-primary display-4 p-3">0%</span> Leyi's pink pig</p>
+        </div>
+    </div>
+
     <!-- Quiz section -->
+    <div class="quiz py-4 bg-primary">
+        <div class="container">
+            <h2 class="my-5 text-white">On with the questions...</h2>
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-nromal">
+                        1. What is Lynne's weight?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q1" value="A" checked>
+                        <label class="form-check-label">50KG</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q1" value="B" >
+                        <label class="form-check-label">60KG</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-nromal">
+                        2. What is Lynne's favourite food?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q2" value="A" checked>
+                        <label class="form-check-label">BBQ</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q2" value="B" >
+                        <label class="form-check-label">Hotpot</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-nromal">
+                        3. How many teeth Lynne has filled this year (2021)</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q3" value="A" checked>
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q3" value="B" >
+                        <label class="form-check-label">10</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-nromal">
+                        4. What is her best friend</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q4" value="A" checked>
+                        <label class="form-check-label">Little crocodile</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q4" value="B" >
+                        <label class="form-check-label">The pink pig</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-nromal">
+                        5. How do you rate Lynne's ass?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q5" value="A" checked>
+                        <label class="form-check-label">10 out of 10</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name ="q5" value="B" >
+                        <label class="form-check-label">100 out of 10</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light" value="zuosi">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
 </body>
 </html>
